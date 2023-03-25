@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Makhdoomiyya Islmaic Academy-Kuttikkadavu</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+        content="freelancer Sign Up Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- //Meta tag Keywords -->
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!--//Style-CSS -->
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="block" class="w3lvide-content" data-vide-bg="images/freelan" data-vide-options="position: 0% 50%">
+            <!-- /form -->
+            <div class="workinghny-form-grid">
+                <div class="main-hotair">
+                    <div class="content-wthree">
+                        <h1 style="color:rgb(255, 197, 5)">Makhdoomiyya Islamic Academy</h1>
+                        <form id="submit-form" action="">
+                            <h4 style="color: white; padding-left: 10px;"></h4>
+                            <input type="text" class="text" name="Name of Student" placeholder="കുട്ടിയുടെ പേര്" required="" autofocus>
+                            <input type="text" class="text" name="Mobile Number" placeholder="നിങ്ങളുടെ നമ്പർ" required="" autofocus>
+                            <input type="text" class="text" name="Whatsapp Number " placeholder="വാട്സപ്പ് നമ്പർ" required="" autofocus>
+                            <input type="text" class="text" name="House Name" placeholder="ഹൗസ് നെയിം" required="" autofocus>
+                            <input type="text" class="text" name="Name of father" placeholder="ഉപ്പയുടെ പേര്" required="" autofocus>
+                            <input type="text" class="text" name="date of birth" placeholder="ജനനത്തീയതി" required="" autofocus>
+                            <input type="text" class="text" name="post" placeholder="നിങ്ങളുടെ പോസ്റ്റ്" required="" autofocus>
+                            <input type="text" class="text" name="pincode" placeholder="പിൻ കോഡ്" required="" autofocus>
+                            <input type="text" class="text" name="job of father" placeholder="ഉപ്പയുടെ ജോലി" required="" autofocus>
+                            <input type="text" class="text" name="place" placeholder="സ്ഥലം" required="" autofocus>
+                            <input type="text" class="text" name="identification mark" placeholder="തിരിച്ചറിയാനുള്ള അടയാളം" required="" autofocus>
+                            
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                        
+                        <h4 style="color: rgb(252, 153, 5);">More details</h4>
+                        <h5 ><a href="https://wa.me/919061467862" style="color: white;">Ilyas FAIZY: 9061467862</a></h5>
+                       
+                    </div>
+                  
+                </div>
+           
+     
+        <!-- copyright-->
+        <div class="copyright text-center">
+            <p class="copy-footer-29">Design by <a
+                        href="https://w3layouts.com">Makhdoomiyya</a></p>
+                        
+        </div>
+       </div>
+        <!-- //copyright-->
+    </div>
+    <!-- //form section start -->
+      <!-- js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- //js -->
+  <script src="js/jquery.vide.js"></script>
+  <script>
+    //    $(document).ready(function () {
+    //        $("#block").vide("video/ocean"); // Non declarative initialization
+    //
+    //        var instance = $("#block").data("vide"); // Get instance
+    //        var video = instance.getVideoObject(); // Get video object
+    //        instance.destroy(); // Destroy instance
+    //    });
+  </script>
+  <script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbyOfvQJdv9a-5rojPVjyieSpCSjDd6g1jEbCCqAyJGRl8f62LYcQWLnVGPsseoPH5XpGQ/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
+</body>
+
+</html>
